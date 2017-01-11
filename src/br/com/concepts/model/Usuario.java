@@ -22,10 +22,17 @@ public class Usuario {
 	
 	public Usuario() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
-
+	public boolean validarNome(){
+		System.out.println("validando nome...");
+		return this.nome != null && this.nome.length() > 3;
+	}
+	
+	public boolean validarEmail(){
+		System.out.println("validando email...");
+		return this.email != null && this.email.contains("@");
+	}
 
 	public String getNome() {
 		return nome;
@@ -50,6 +57,12 @@ public class Usuario {
 	}
 	public void setAtivo(Boolean ativo) {
 		this.ativo = ativo;
+	}
+
+	@Override
+	public String toString() {
+		return "Usuario [nome=" + nome + ", email=" + email + ", papel="
+				+ papel + ", ativo=" + ativo + "]";
 	}
 	
 	
