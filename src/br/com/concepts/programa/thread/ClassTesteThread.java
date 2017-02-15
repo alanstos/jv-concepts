@@ -1,4 +1,4 @@
-package br.com.concepts.programa;
+package br.com.concepts.programa.thread;
 
 import br.com.concepts.model.BarraDeProgresso;
 import br.com.concepts.model.GerandoPDF;

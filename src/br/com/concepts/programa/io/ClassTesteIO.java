@@ -1,4 +1,4 @@
-package br.com.concepts.programa;
+package br.com.concepts.programa.io;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
