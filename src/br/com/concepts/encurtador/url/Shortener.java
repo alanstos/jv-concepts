@@ -1,8 +1,5 @@
 package br.com.concepts.encurtador.url;
 
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
 import java.util.Random;
 
 
@@ -17,10 +14,6 @@ public class Shortener {
 		
 		System.out.println(s.geraUrlShort("alan.com.br","qualquer_coisa"));
 		System.out.println(s.geraUrlShort("alan.com.br"));
-		
-		List<String> letras = Arrays.asList("A", "B", "C");
-		Collections.shuffle(letras);
-		System.out.println(letras);	
 		
 		System.out.println(s.gerarString());
 		
