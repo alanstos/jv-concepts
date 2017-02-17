@@ -5,8 +5,6 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
-import br.com.concepts.model.GerandoPDF;
-
 
 public class Shortener {
 	
