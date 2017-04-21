@@ -1,15 +1,6 @@
 package br.com.concepts.dpatters.templatemethod.slim;
 
-public class IKCV implements Imposto {
-
-	@Override
-	public double calcula(Orcamento orcamento) {
-		if (orcamento.getValor() > 500 && temItemMaiorQue100ReaisNo(orcamento)) {
-			return orcamento.getValor() * 0.10;
-		} else {
-			return orcamento.getValor() * 0.06;
-		}
-	}
+public class IKCV extends TemplateDeImpostoCondicional {
 
 	private boolean temItemMaiorQue100ReaisNo(Orcamento orcamento) {
 		for (Item item : orcamento.getItens()) {
@@ -18,6 +9,21 @@ public class IKCV implements Imposto {
 		}
 
 		return false;
+	}
+
+	@Override
+	double impostoMaior(Orcamento orcamento) {
+		return orcamento.getValor() * 0.10;
+	}
+
+	@Override
+	double impostoMenor(Orcamento orcamento) {
+		return orcamento.getValor() * 0.06;
+	}
+
+	@Override
+	public boolean deveCalcularImpostoMenor(Orcamento orcamento) {
+		return orcamento.getValor() > 500 && temItemMaiorQue100ReaisNo(orcamento);
 	}
 
 }

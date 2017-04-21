@@ -1,0 +1,20 @@
+1 - Strategy
+grande variedade de imposto
+
+2 - Chain of responsibility
+Muitos descontos
+
+3 - Template method
+Codigo parecidos
+
+4 - Decorator
+Comportamento composto por outro componente
+
+5 - State 
+ estado que varia
+ 
+ 6- Builder
+ Criando objetos
+ 
+ 7 - Observer
+ Executando diferentes acoes

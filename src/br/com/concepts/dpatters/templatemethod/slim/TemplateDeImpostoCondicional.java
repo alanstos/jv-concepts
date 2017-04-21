@@ -1,45 +1,23 @@
 package br.com.concepts.dpatters.templatemethod.slim;
 
-public class TemplateDeImpostoCondicional implements Imposto {
+public abstract class TemplateDeImpostoCondicional implements Imposto {
 
 	@Override
 	public double calcula(Orcamento orcamento) {
 		
-		if (deveCalcularImpostoMenor()){
-			return impostoMenor();
+		if (deveCalcularImpostoMenor(orcamento)){
+			return impostoMenor(orcamento);
 		}else{
-			return impostoMaior();
+			return impostoMaior(orcamento);
 		}
 		
 		
 	}
 
-	private double impostoMaior() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
+	abstract double impostoMaior(Orcamento orcamento);
 
-	private double impostoMenor() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
+	abstract double impostoMenor(Orcamento orcamento);
 
-	private boolean deveCalcularImpostoMenor() {
-		// TODO Auto-generated method stub
-		return false;
-	}
-	
-//    public double calcula(Orcamento orcamento) {
-//
-//        if(deveUsarMaximaTaxacao(orcamento)) {
-//          return maximaTaxacao(orcamento);
-//        } else {
-//          return minimaTaxacao(orcamento);
-//        }
-//      }        
-//
-//      public abstract boolean deveUsarMaximaTaxacao(Orcamento orcamento);
-//      public abstract double maximaTaxacao(Orcamento orcamento);
-//      public abstract double minimaTaxacao(Orcamento orcamento);	
+	public abstract boolean deveCalcularImpostoMenor(Orcamento orcamento);
 
 }
