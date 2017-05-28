@@ -5,6 +5,14 @@ import java.util.List;
 
 import br.com.concepts.dpatters.p2.flyweight.slim.som.Piano;
 
+/**
+ * 
+Uma Factory instancia uma classe que é importante/complexa, e seu processo de criação deve ser isolado.
+
+Um Flyweight serve para quando temos muitas instâncias do mesmo objeto andando pelo sistema, e precisamos economizar. 
+Para tal, o Flyweight faz uso de uma fábrica modificada, que guarda essas instâncias.
+ *
+ */
 public class MainProgramaEleganteFlyweight {
 
 	public static void main(String[] args) {
