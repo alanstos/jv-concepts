@@ -15,6 +15,7 @@ public class NotasMusicais {
 		notas.put("sol", new Sol());
 		notas.put("la", new La());
 		notas.put("si", new Si());
+		notas.put("doSustenido", new DoSustenido());
 	}
 	
 	public Nota pegaNota(String nomeNota){

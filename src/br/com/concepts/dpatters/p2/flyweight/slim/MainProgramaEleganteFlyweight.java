@@ -20,7 +20,8 @@ public class MainProgramaEleganteFlyweight {
 		NotasMusicais notas = new NotasMusicais();
 		
 		List<Nota> musica = Arrays.asList(
-	            notas.pega("do"),    
+	            notas.pega("do"),  
+	            notas.pega("doSustenido"),   
 	            notas.pega("re"),    
 	            notas.pega("mi"),    
 	            notas.pega("fa"),    
@@ -48,6 +49,8 @@ public class MainProgramaEleganteFlyweight {
 	            notas.pega("fa"),    
 	            notas.pega("fa")
 				);
+		
+		System.out.println(musica);
 		
 		Piano piano = new Piano();
 		piano.toca(musica);

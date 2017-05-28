@@ -13,7 +13,8 @@ public class NotasMusicais2 {
     static {
          clazzes = Arrays.asList(
                     Do.class, Re.class, Mi.class, Fa.class, 
-                    Sol.class, La.class, Si.class);
+                    Sol.class, La.class, Si.class,
+                    DoSustenido.class);
     }
 
     public Nota pega(String nome) {
