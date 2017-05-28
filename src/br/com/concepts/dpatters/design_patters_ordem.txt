@@ -1,3 +1,5 @@
+PARTE 1
+
 1 - Strategy
 grande variedade de imposto
 
@@ -18,3 +20,7 @@ Comportamento composto por outro componente
  
  7 - Observer
  Executando diferentes acoes
+ 
+ PARTE 2
+ 
+ 8 - Factory

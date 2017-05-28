@@ -18,7 +18,7 @@ public class EmAprovacao implements IEstadoOrcamento{
 
 	@Override
 	public void finalizar(Orcamento o) {
-		// TODO Auto-generated method stub
+		throw new RuntimeException("orcado em aprovacao nao pode ser finalizado diretamente ");	
 		
 	}
 
