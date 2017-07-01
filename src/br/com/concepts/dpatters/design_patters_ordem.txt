@@ -24,3 +24,9 @@ Comportamento composto por outro componente
  PARTE 2
  
  8 - Factory
+ 
+ 9 - Flyweight
+ 
+ 10 - Memento
+ 
+ 11 - dsl e interpreter
