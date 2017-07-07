@@ -32,3 +32,18 @@ Dentre os padrões de projeto aqui aprendidos, qual se encaixa melhor para esse 
 RESPOSTA: STATE
 O State facilitaria o trabalho do desenvolvedor, já que ele possibilitaria que as ações de cada estado fiquem centralizadas em classes específicas, evitando a possível bagunça de um código procedural cheio de ifs.
 
+
+5 - Qual a diferença entre Bridge e Adapter?
+Em termos de implementação, nenhuma. Em ambas, criamos uma interface e criamos uma implementação por baixo.
+A diferença é semântica. A ideia da Bridge é justamente ser uma ponte em dois mundos/sistemas. A ideia do Adapter é esconder alguma "sujeira", ou adaptar algo que é diferente e não bate com o sistema atual.
+
+É bem comum inclusive que a interface do Adapter já tenha sido pré-definida e já até exista no sistema. Nessa situação, o programador vai lá para implementar um "adaptador" para o sistema antigo, de forma a caber no modelo já existente.
+
+
+6 - Qual a diferença entre Command e Strategy?
+
+Novamente, em termos de implementação, eles são bem parecidos, pois dependem de interfaces.
+A ideia do Command é abstrair um comando que deve ser executado, pois não é possível executá-lo naquele momento (pois precisamos por em uma fila ou coisa do tipo).
+
+Já no Strategy, a ideia é que você tenha uma estratégia (um algoritmo) para resolver um problema.
+

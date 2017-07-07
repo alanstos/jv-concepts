@@ -30,3 +30,18 @@ Comportamento composto por outro componente
  10 - Memento
  
  11 - dsl e interpreter
+ 
+ 12 - estruturas de dados e o visitor
+ 
+ 13 - bridges e adapters (implementacao eh a mesma, diferenca na semantica)
+ // bom para tratar com classes de terceiros
+ //bridges - pontes para outros sistesmas
+ //adapters - adapta interfaces antigas a interfaces novas
+ 
+ 14 - Command
+ // encapsula comando a ser executado no futuro
+ 
+ 15 - Facades e singletons
+ O Singleton nos ajuda a ter uma única instância do objeto ao longo do sistema.
+ 
+ Uma façade serve como uma frente única para os serviços disponibilizados por um ou mais sub-sistemas, provendo uma maneira mais simples para consumo do mesmo.
